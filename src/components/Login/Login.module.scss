@@ -1,0 +1,108 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 33px;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        font-weight: 500;
+        gap: 5px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #4154F1;
+        border-radius: 4px;
+        color: #4154F1;
+        text-decoration: none;
+        width: 134px;
+        height: 55px;
+        transition: .2s ease-in-out;
+
+        &:hover {
+            background: #4154F1;
+            color: #fff;
+        }
+    }
+}
+
+.login {
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+    }
+
+    &__item {
+        text-align: center;
+
+        button {
+            background: #4154F1;
+            border: 0;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 18px;
+            width: 142px;
+            height: 46px;
+            cursor: pointer;
+        }
+
+        h2 {
+            color: #000;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 44px;
+        }
+
+        p {
+            width: 274px;
+            margin: 0 auto;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #8E8D8D;
+            margin-top: 15px;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__inputs {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .login__name,
+        .login__pass {
+            width: 385px;
+            height: 50px;
+            background: #FFFFFF;
+            border: 1px solid #4154F1;
+            border-radius: 4px;
+            outline: none;
+            padding-left: 20px;
+            font-size: 16px;
+        }
+
+        .login__name {
+            margin-bottom: 21px;
+        }
+
+        .login__pass {
+            margin-bottom: 50px;
+        }
+
+        .login__name::placeholder,
+        .login__pass::placeholder {
+            color: #000;
+            font-size: 16px;
+        }
+    }
+}

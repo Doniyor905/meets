@@ -1,0 +1,38 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;
+  
+    &__logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      gap: 5px;
+  
+      p {
+        font-size: 30px;
+        font-weight: 400;
+        color: #000;
+      }
+    }
+  
+    &__link {
+      background-color: #4154F1;
+      width: 134px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      text-decoration: none;
+      color: #fff;
+      border-radius: 4px;
+      transition: .2s ease-in-out;
+  
+      &:hover {
+        background-color: #1e32e2;
+  
+      }
+    }
+  }
